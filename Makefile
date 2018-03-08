@@ -1,3 +1,6 @@
+deps:
+	go get -d -u ./....
+
 build: vet
 	go get ./...
 
