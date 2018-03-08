@@ -7,6 +7,8 @@ A lightweight client for authenticating SSH users using their IAM public keys.
  - Developers automatically upload their keys to IAM.
  - SSH authentication audit trail via CloudWatch.
 
+All authorized keys are stored for the `ubuntu` user.
+
 ## Usage
 
 ```
