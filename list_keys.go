@@ -87,17 +87,6 @@ func (r *listKeys) Run() error {
 		}
 	}
 
-	/*
-		instances, _ := awsutil.ValuesAtPath(resp, "Reservations[].Instances[]")
-		for _, instance := range instances {
-			h := instance.(*ec2.Instance)
-			tags := aggregateTags(h.Tags)
-			// TODO - calculate role from tags
-			role := gocli.Red("NONE")
-			t.Add(h.InstanceId, h.LaunchTime.Format("2006-01-02T15:04"), h.ImageId, tags["Name"], h.PrivateIpAddress, h.PublicIpAddress, h.InstanceType, role)
-		}
-	*/
-
 	t.SortBy = 1
 	sort.Sort(sort.Reverse(t))
 	fmt.Println(t)
