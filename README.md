@@ -1,5 +1,7 @@
 # Brightfame SSH IAM
 
+**Note**: This repository is a WIP.
+
 A lightweight client for authenticating SSH users using their IAM public keys.
 
 ## Features
