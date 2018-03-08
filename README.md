@@ -1,6 +1,6 @@
 # Brightfame SSH IAM
 
-A light weight client for authenticating SSH users using their IAM public keys.
+A lightweight client for authenticating SSH users using their IAM public keys.
 
 ## Features
 
