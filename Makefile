@@ -1,11 +1,14 @@
-deps:
-	go get -d -u ./....
-
 build: vet
-	go get ./...
+	go get ./src
+
+deps:
+	go get -d -u ./src
 
 test:
-	go test -v
+	go test -v src
 
 vet:
-	go vet ./...
+	go vet ./src
+
+image:
+	docker build -t brightfame/ssh-iam .
